@@ -1,0 +1,9 @@
+to create new student, log into admin portal:
+
+username: admin
+password: admin
+
+log into student portal with student matric number and password
+
+
+KUNLE BADEAFUYE 169074181 (c) 2018
