@@ -25,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">MIT II INFORMATION PORTAL</a>
+            <a class="navbar-brand" href="index.php">ASSIGNMENT MANAGEMENT SYSTEM</a>
           </div>
 
           <?php 
@@ -41,14 +41,29 @@
                 }else{
                 header("Location:index.php?id=access_forbidden");
                 }
-               
-        ?>
+      
+
+
+                $dbservername= "localhost";
+                $dbUsername="root";
+                $dbPassword="";
+                $dbName="portal";
+
+                $conn = @mysqli_connect($dbservername,$dbUsername,$dbPassword,$dbName) or die ("Cannot connect to database");
+
+
+                $sql = "SELECT * FROM students WHERE Matric='$matric' ";
+                $result = mysqli_query($conn,$sql);
+
+          $i = 1; 
+          while ($row = mysqli_fetch_array($result)){ ?>
         
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a style="color: #000" id="link1">Welcome <?php echo $matric; ?></a></li>
+              <li><a style="color: #000" id="link1">Welcome <?php echo "<strong>".$row['First_Name']." ".$row['Last_Name']."</strong>";?></a></li>
               <li><a href="studentlogout.php">Logout</a></li>
             </ul>
+             <?php $i++; } ?>
         </div>
           
         </div>
@@ -93,7 +108,7 @@
     </div> 
     <footer class="row col-md-12"> 
         <div class="footer-copyright text-center"> 
-            <a href="#"> Kunle Badeafuye </a> |169074181| © 2018 
+            Copyright © 2018 <a href="#"> Kunle Badeafuye </a> 
         </div>
   </footer>
   </body>

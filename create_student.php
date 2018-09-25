@@ -25,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">MIT II INFORMATION PORTAL</a>
+            <a class="navbar-brand" href="index.php">ASSIGNMENT MANAGEMENT SYSTEM</a>
           </div>
         
           <?php 
@@ -91,7 +91,7 @@
     </div> 
     <footer class="row col-md-12"> 
         <div class="footer-copyright text-center"> 
-            <a href="#"> Kunle Badeafuye </a> |169074181| © 2018 
+            Copyright © 2018 <a href="#"> Kunle Badeafuye </a>  
         </div>
   </footer>
   </body>

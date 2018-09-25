@@ -25,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">MIT II INFORMATION PORTAL</a>
+            <a class="navbar-brand" href="index.php">ASSIGNMENT MANAGEMENT SYSTEM</a>
           </div>
         
         <div class="collapse navbar-collapse">
@@ -39,7 +39,7 @@
       </nav>
 
     <div class="container">
-          <h2 class="text-center">MIT II ONLINE PORTAL</h2>
+          <h2 class="text-center">ASSIGNMENT MANAGEMENT SYSTEM</h2>
           <img class = "center-block" src="images/logo.jpg">
      
       <form class="form-signin" action="adminlogin.php" method="POST">
@@ -57,7 +57,7 @@
     </div> 
     <footer class="row col-md-12"> 
         <div class="footer-copyright text-center"> 
-            <a href="#"> Kunle Badeafuye </a> |169074181| © 2018 
+            Copyright © 2018 <a href="#"> Kunle Badeafuye </a>  
         </div>
   </footer>
   </body>
